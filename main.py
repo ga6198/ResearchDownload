@@ -192,7 +192,7 @@ if continueFromLast == 'n':
 elif continueFromLast == 'y':
     hasNextPage = True
 
-if hasNextPage: #while hasNextPage:
+while hasNextPage:
     if continueFromLast == 'y':
         #open previous cursor from file
         file1 = open('finalCursor.txt', 'r')

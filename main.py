@@ -7,7 +7,7 @@ import urllib.request
 
 query = """
 {
-  search(query: "mirror:false language:PHP stars:10 ", type: REPOSITORY, first: 100) {
+  search(query: "mirror:false language:PHP stars:>10 ", type: REPOSITORY, first: 100) {
     repositoryCount
     edges {
       node {
@@ -73,7 +73,7 @@ query = """
 
 additional_query = Template("""
 {
-  search(query: "mirror:false language:PHP stars:10 ", type: REPOSITORY, first: 100, after: "$friendCursor") {
+  search(query: "mirror:false language:PHP stars:>10 ", type: REPOSITORY, first: 100, after: "$friendCursor") {
     repositoryCount
     edges {
       node {

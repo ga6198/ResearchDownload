@@ -47,7 +47,7 @@ print("Test files:", test_files)
 print("Validation files:", validation_files)
 
 print("Unzipping and moving files...")
-unzip_and_move(training_files, "../research_download/train")
-unzip_and_move(test_files, "../research_download/test")
-unzip_and_move(validation_files, "../research_download/val")
+unzip_and_move(training_files, "../code2vec/php/train")
+unzip_and_move(test_files, "../code2vec/php/test")
+unzip_and_move(validation_files, "../code2vec/php/val")
 
